@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A139803D-4E77-410B-8205-3B50A33171CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCFServiceLib</RootNamespace>
+    <AssemblyName>WCFServiceLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\bin\x64\Debug\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\bin\x64\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IPushCallback.cs" />
+    <Compile Include="IPushService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PushEventArgs.cs" />
+    <Compile Include="PushService.cs" />
+    <Compile Include="WCFSubscription.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractActionLib\AbstractActionLib.csproj">
+      <Project>{2F205C73-ECE1-44FB-A7BA-87D3AB6A38C2}</Project>
+      <Name>AbstractActionLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseMethodLib\BaseMethodLib.csproj">
+      <Project>{323B3067-CD8E-4838-81C0-D5B1CABFA1BC}</Project>
+      <Name>BaseMethodLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BillingManagementLib\BillingManagementLib.csproj">
+      <Project>{B89815E3-2920-49F6-9511-89FF8115DD3E}</Project>
+      <Name>BillingManagementLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonMethodLib\CommonMethodLib.csproj">
+      <Project>{3BB96EF2-285E-4D60-9EFD-49292DD18623}</Project>
+      <Name>CommonMethodLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommunicationLib\CommunicationLib.csproj">
+      <Project>{860A6AAB-8AB9-488D-9ADE-3DF7810BECEE}</Project>
+      <Name>CommunicationLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConfigManagmtLib\ConfigManagementLib.csproj">
+      <Project>{9FFAEB15-0F90-40F8-ACF9-9CE55E209124}</Project>
+      <Name>ConfigManagementLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseManagementLib\DatabaseManagementLib.csproj">
+      <Project>{963F1E70-A14D-414E-9D43-CE2095A33283}</Project>
+      <Name>DatabaseManagementLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICCardManagementLib\ICCardManagementLib.csproj">
+      <Project>{9B9F57D4-2599-4F3F-BFF2-AE4D1B2D04FA}</Project>
+      <Name>ICCardManagementLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LOGManagementLib\LOGManagementLib.csproj">
+      <Project>{39E05A24-73FE-46B6-B18B-AAF8C1D284E3}</Project>
+      <Name>LOGManagementLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Typedef\TypedefLib.csproj">
+      <Project>{85987C19-A032-4283-B472-4B6CA92807FB}</Project>
+      <Name>TypedefLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkFlowLib\WorkFlowLib.csproj">
+      <Project>{7AB351EE-D796-4F79-A491-B4E9427C461C}</Project>
+      <Name>WorkFlowLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

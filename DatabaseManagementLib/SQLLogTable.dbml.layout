@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SQLFindTable">
+  <DataContextMoniker Name="/CSQLLogTableDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1bff2171-046c-4088-afb3-101ee1c832ab" absoluteBounds="5.375, 3.875, 2, 1.9542057291666666">
+      <DataClassMoniker Name="/CSQLLogTableDataContext/CDeviceFaultLogDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6298d85d-5473-4502-add2-89816c27da2b" absoluteBounds="5.3900000000000006, 4.335, 1.9700000000000002, 1.3942057291666665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a3187235-0957-4ccf-acdb-e35c7357893b" absoluteBounds="0.5, 3.875, 2, 1.6169661458333327">
+      <DataClassMoniker Name="/CSQLLogTableDataContext/CSystemLogDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="614915d7-fa4b-4dd8-9344-9041a7504d76" absoluteBounds="0.51499999999999968, 4.335, 1.9700000000000002, 1.0569661458333333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="49ddc702-bfff-4818-a3d0-855dbc1fbfa8" absoluteBounds="5.25, 0.5, 2, 3.1345442708333331">
+      <DataClassMoniker Name="/CSQLLogTableDataContext/CTelegramLogDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="394686bb-d8fe-491a-b1de-c765a99d3d00" absoluteBounds="5.265, 0.96, 1.9700000000000002, 2.574544270833333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0d40b04-4d4a-4d28-8163-a03180d83416" absoluteBounds="0.5, 0.5, 2, 2.9659244791666666">
+      <DataClassMoniker Name="/CSQLLogTableDataContext/CICCardLogDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="640b6f77-a70d-4c50-809b-1ee3050fd49d" absoluteBounds="0.515, 0.96, 1.9700000000000002, 2.4059244791666665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c51e9cfa-59df-4033-9d2a-cb1e6dddf474" absoluteBounds="2.75, 0.5, 2, 3.3031640625">
+      <DataClassMoniker Name="/CSQLLogTableDataContext/CDeviceStatusLogDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6673e048-8e89-42d1-897e-18dc77b84fd6" absoluteBounds="2.765, 0.96, 1.9700000000000002, 2.7431640625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

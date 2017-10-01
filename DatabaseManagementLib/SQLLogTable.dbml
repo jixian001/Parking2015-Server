@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="6113" Class="CSQLLogTableDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.devicefaultlog" Member="CDeviceFaultLogDto">
+    <Type Name="CDeviceFaultLogDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="warehouse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="devicecode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="faultdescp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="optcode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="color" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.systemlog" Member="CSystemLogDto">
+    <Type Name="CSystemLogDto">
+      <Column Name="logid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="logdescp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="curtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="optcode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="optname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.telegramlog" Member="CTelegramLogDto">
+    <Type Name="CTelegramLogDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="logtype" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="telegramhead" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="devicecode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iccode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="carinfo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="slotinfo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="srcaddr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="destaddr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="telegramid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="direction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="warehouse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="destdirection" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.iccardlog" Member="CICCardLogDto">
+    <Type Name="CICCardLogDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="iccode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ictype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="starttime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="endtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="calculatedays" Type="System.String" DbType="nvarchar(MAX)" CanBeNull="true" />
+      <Column Name="feetype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tariffnorm" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="payablefee" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="actualfee" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="optcode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="paymenttime" Type="System.DateTime" DbType="DateTime " CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.devicestatuslog" Member="CDeviceStatusLogDto">
+    <Type Name="CDeviceStatusLogDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="warehouse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="devicecode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="deviceaddr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="devicemode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="devicetype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="halltype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="curtasktype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isavailable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isgetoutcar" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="instep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="outstep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="runstep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_6096BJ" Class="CSQLRelateTableDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=STAS-L0565;Initial Catalog=db_6096BJ;Persist Security Info=True;User ID=sa" SettingsObjectName="DatabaseManagementLib.Properties.Settings" SettingsPropertyName="db_6096BJConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.carcustomer" Member="CCarCustomerDto">
+    <Type Name="CCarCustomerDto">
+      <Column Name="userid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="useraddr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="userphone" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="usermobile" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="carnumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.operator" Member="COperatorDto">
+    <Type Name="COperatorDto">
+      <Column Name="optcode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="optname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="optpassword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="optphone" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="optaddr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="opttype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="optpermission" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.devicestatus" Member="CDeviceStatusDto">
+    <Type Name="CDeviceStatusDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="warehouse" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="devicecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tasktype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isavailable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="devicemode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="deviceaddr" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="devicetype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="halltype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="region" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isgetoutcar" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iccode" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="instep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="outstep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="runstep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="warehousechange" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="devicelayer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="prevnode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="currentnode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="queueprevnode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="queuecurrentnode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="scrloc" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="desccloc" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.iccard" Member="CICCardDto">
+    <Type Name="CICCardDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="iccode" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="oldiccode" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="phycode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ictype" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="icstatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="icnewtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="iclosstime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="iclogouttime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="icstarttime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="icdeadline" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="carlocaddr" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="warehouse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="userid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tariffid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="priorityid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.carlocation" Member="CCarLocationDto">
+    <Type Name="CCarLocationDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="carlocaddr" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="warehouse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carlocside" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carloccolumn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carloclayer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carlocstatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carloctype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carlocsize" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="iccode" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="carwheelbase" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carsize" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="isbackup" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carintime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="priorityid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="region" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carnumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="carpicture" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="direction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="overallLg" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="overhang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carweight" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="offcenter" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="rearwheeldis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

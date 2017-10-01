@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.625" name="SQLAccess">
+  <DataContextMoniker Name="/CSQLRelateTableDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a2b05e97-8302-4c25-abab-38ed4c859cdf" absoluteBounds="5.5, 0.5, 2, 1.9068933105468751">
+      <DataClassMoniker Name="/CSQLRelateTableDataContext/CCarCustomerDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2885ffb7-24c0-41d5-a9ba-0f159955a2fb" absoluteBounds="5.515, 0.96, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e709e92-faf8-4938-bca7-fe439e8376d4" absoluteBounds="0.625, 0.625, 2, 2.0916874186197916">
+      <DataClassMoniker Name="/CSQLRelateTableDataContext/COperatorDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e953a12-11a9-4679-acfb-2ce7450b9839" absoluteBounds="0.64000000000000012, 1.085, 1.9700000000000002, 1.5316874186197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6847b548-c4ca-496e-b71d-aafdfb813100" absoluteBounds="0.5, 2.875, 2, 5.2331872558593746">
+      <DataClassMoniker Name="/CSQLRelateTableDataContext/CDeviceStatusDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4523d04e-8849-47a5-a4d8-ea629cae6bcd" absoluteBounds="0.51500000000000012, 3.335, 1.9700000000000002, 4.673187255859375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38b4ad93-3782-4608-bf85-298fd5673eef" absoluteBounds="2.875, 0.625, 2, 3.7548343912760416">
+      <DataClassMoniker Name="/CSQLRelateTableDataContext/CICCardDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0bcb73ed-1848-4eed-8285-b9c058fd21e3" absoluteBounds="2.89, 1.085, 1.9700000000000002, 3.1948343912760415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fde01c2e-5b97-4ed2-a7a4-cdd9b709cca5" absoluteBounds="5.375, 3.125, 2, 5.2331872558593746">
+      <DataClassMoniker Name="/CSQLRelateTableDataContext/CCarLocationDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ae14551-441c-4783-8f01-05911c9a7b24" absoluteBounds="5.39, 3.585, 1.9700000000000002, 4.673187255859375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

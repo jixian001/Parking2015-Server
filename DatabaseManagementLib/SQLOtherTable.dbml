@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_6096BJ" Class="CSQLOtherTableDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=STAS-L0565;Initial Catalog=db_6096BJ;Persist Security Info=True;User ID=sa" SettingsObjectName="DatabaseManagementLib.Properties.Settings" SettingsPropertyName="db_6096BJConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.devicefault" Member="CDeviceFaultDto">
+    <Type Name="CDeviceFaultDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="faultdescp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="faultaddress" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="color" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="devicecode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="warehouse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sound" Member="CSoundDto">
+    <Type Name="CSoundDto">
+      <Column Name="soundcode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="soundname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="soundcontent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="soundishand" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ledcontent" Member="CLedContentDto">
+    <Type Name="CLedContentDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ledcontent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tariff" Member="CTariffDto">
+    <Type Name="CTariffDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="iccardtype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="feetype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tariffdescp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="isworkday" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="workpeakperiod" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="workdayquotafee" Type="System.Single" DbType="Float" CanBeNull="true" />
+      <Column Name="workpeakfirstunit" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="worknonpeakfirstunit" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="workpeakinunitfee" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="workpeakoutunitfee" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="worknonpeakinunitfee" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="worknonpeakoutunitfee" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="nonworkpeakperiod" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="nonworkdayquotafee" Type="System.Single" DbType="Float" CanBeNull="true" />
+      <Column Name="nonworkpeakfirstunit" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="nonworknonpeakfirstunit" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="nonworkpeakinunitfee" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="nonworkpeakoutunitfee" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="nonworknonpeakinunitfee" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="nonworknonpeakoutunitfee" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fee" Type="System.Single" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.workqueue" Member="CWorkQueueDto">
+    <Type Name="CWorkQueueDto">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="devicecode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="warehouse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iccode" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="swipecount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="waitsendtelegram" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="priorityid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tasktype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
